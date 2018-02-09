@@ -12,13 +12,27 @@
  * =============================================================
  */
 
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+import java.util.TreeSet;
+
 /**
- *
- * @Description: TODO
  * @author Tyson
- * @date 2018/2/7下午6:23
  * @version V1.0
+ * @Description: TODO
+ * @date 2018/2/7下午6:23
  */
 public class HashCodeTset {
 
+    public static void main(String[] args) {
+        HashSet hashSet = new HashSet();
+        hashSet.add("1");
+        Iterator iterator = hashSet.iterator();
+        while (iterator.hasNext()){
+            System.out.println(iterator.next());
+        }
+
+        TreeSet treeSet = new TreeSet();
+    }
 }
