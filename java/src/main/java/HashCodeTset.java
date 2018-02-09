@@ -25,11 +25,17 @@ import java.util.TreeSet;
  */
 public class HashCodeTset {
 
+
+    public Boolean test(boolean a) {
+
+        return a;
+    }
+
     public static void main(String[] args) {
         HashSet hashSet = new HashSet();
         hashSet.add("1");
         Iterator iterator = hashSet.iterator();
-        while (iterator.hasNext()){
+        while (iterator.hasNext()) {
             System.out.println(iterator.next());
         }
 
