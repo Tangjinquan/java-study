@@ -46,6 +46,7 @@ public class ProxyTest implements InvocationHandler {
         InvocationHandler handler = new ProxyTest(realSubject);
         //当类加载时才会生成一个动态代理类，该类实现的接口由 realSubject.getClass().getInterfaces()决定
         Subject subject = (Subject) Proxy.newProxyInstance(handler.getClass().getClassLoader(), realSubject.getClass().getInterfaces(), handler);
+//        Subject subject = (Subject)Proxy.newProxyInstance(realSubject.getClass().getClassLoader(), new Class[]{Subject.class}, handler);
         subject.request();
         System.out.println(subject);//System.out.println也等于调用方法也会触发invoke 调用的是toString方法
     }
