@@ -50,4 +50,5 @@ public class ProxyTest implements InvocationHandler {
         subject.request();
         System.out.println(subject);//System.out.println也等于调用方法也会触发invoke 调用的是toString方法
     }
+    //单列模式 。策略模式。动态代理模式。 观察者模式 适配器模式？
 }
