@@ -13,6 +13,8 @@
  */
 package watch;
 
+import java.util.Date;
+
 /**
  *
  * @Description: TODO
@@ -38,6 +40,12 @@ public class Test {
 
         girl.removeWatcher(watcher2);
         girl.notifyWatcher("不爽");
+        new Date(){
+            @Override
+            public String toLocaleString() {
+                return "hello";
+            }
+        };
 
     }
 }
