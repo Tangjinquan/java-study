@@ -35,9 +35,10 @@ public class ThreadTest {
 
 class Thread1 extends Thread {
     @Override
-    public void run() {
+    public synchronized void run() {
         System.out.println("Thread1");
     }
+
 }
 
 class Thread2 implements Runnable{
